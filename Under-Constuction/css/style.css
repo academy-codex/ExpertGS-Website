@@ -1,0 +1,83 @@
+body {
+  background-color: #181819;
+}
+
+#content {
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  color: #2FBDF4;
+}
+
+h4 {
+  font-family: 'Raleway', sans-serif;
+  color: #2FBDF4;
+}
+
+#svgElement {
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ConeLight {
+  fill: orange !important;
+  animation: .6s infinite coneCycle;
+}
+
+@-webkit-keyframes coneCycle {
+  50% {
+    fill: white;
+  }
+  100% {
+    fill: #d62209;
+  }
+}
+#CraneLight {
+  fill: white;
+  animation: .6s infinite coneCycle;
+}
+
+#Winch {
+  transform: translateX(88px);
+  animation: 4s linear infinite winchCycle;
+  animation-direction: alternate-reverse;
+}
+
+@-webkit-keyframes winchCycle {
+  0% {
+    transform: translateX(88px);
+  }
+  100% {
+    transform: translateX(4px);
+  }
+}
+#PaintRoller {
+  animation: .7s ease infinite paintRoller;
+  transform: translateY(-1px);
+  animation-direction: alternate-reverse;
+}
+
+@-webkit-keyframes paintRoller {
+  0% {
+    transform: translateY(-7px);
+  }
+  100% {
+    transform: translateY(21px);
+  }
+}
+a {
+  color: white;
+  text-decoration: none;
+  transition: ease .2s;
+}
+
+a:hover {
+  color: #2FBDF4;
+}
