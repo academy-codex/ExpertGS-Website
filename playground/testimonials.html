@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title> RandPos JS </title>
+        
+        <link href="css/randpos_css.css" rel="stylesheet" type="text/css">
+    </head>
+    
+    <body>
+        
+        <div> <!-- (Empty surrounding element for scrolling) -->
+            <div class="RandPosContainer"> <!-- (Container of Elements) -->
+                <!-- (Elements to spread across parent) -->
+                <div style="background-image: url(img/notebook.png)"></div>
+                <div style="background-image: url(img/car.png)"></div>
+                <div style="background-image: url(img/software.png)"></div>
+                <div style="background-image: url(img/strategy.png)"></div>
+                <div style="background-image: url(img/jobs.png)"></div>
+            </div>
+        </div>
+    
+        <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+        <script src="js/randpos.js"></script>
+        
+        <script type="text/javascript">
+            $(".RandPosContainer").RandPos({
+                //Height of random positioned element's parent
+    ContainerHeight: 800,
+
+    //Allow (true) or Forbid (false) overflow (used for scrollable containers)
+    OverFlowAllowed: true,
+
+    //Width of elements to be positioned random
+    DefaultTargetsWidth: 256,
+
+    //Height of elements to be positioned random
+    DefaultTargetsHeight: 256,
+
+    //Dimension-Randomizer: How many px enlargement is allowed?
+    TargetsSizeRandomizePlus: 5,
+
+    //Dimension-Randomizer: How many px shrinking is allowed?
+    TargetsSizeRandomizeMinus: 15,
+
+    //Should elements be hidden before they are positioned?
+    InitiallyHideTargets: true,
+
+    //Should animations be used for elements appearance?
+    UseAnimation: true,
+
+    //Duration of elements appearance animation
+    AnimationDuration: 2500,
+
+    //Friction of elements appearance animation
+    AnimationFriction: 150,
+
+    //Frequency of elements appearance animation
+    AnimationFrequency: 115,
+
+    //If elements should not be shown all at once: Time between showing them
+    AnimationTimeBetween: 100,
+
+    //Minimum horizontal distance betweeen elements in px
+    MinSpreadX: 20,
+
+    //Minimum vertical distance between elements in px
+    MinSpreadY: 20,
+
+    //Max number of tries to position element better (closer, more evenly) than before
+    MaxTries: 1500,
+
+    //Allow scroll to elements positioned outside of view
+    Scrollable: true,
+
+    //Is overflow also allowed to the left side?
+    LeftOverflowAllowed: true,
+
+    //Distance between container-top and elements in px
+    MinPaddingTop: 10,
+
+    //Distance between container-bottom and elements in px
+    MinPaddingBottom: 10,
+
+    //Animate elements with slight css-movement
+    SlightMovementAnimation: true,
+
+    //Speed of automatic scrolling in px/s (0 = no scrolling)
+    AutoscrollSpeed: 5,
+
+    //Time between elements are shown and automatic scrolling beginns
+    ScrollWait: 0
+});
+        </script>
+            
+    </body>
+</html>
