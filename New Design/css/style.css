@@ -16,7 +16,6 @@ html {
 body {
   font-size: 1.6rem;
   font-family: "PT Sans", sans-serif;
-  color: #33414a;
   background-color: #f2f2f2;
 }
 
@@ -37,7 +36,7 @@ header {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #33414a;
+  background-color: rgba(0.28,32,0);   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* Force Hardware Acceleration */
@@ -50,9 +49,10 @@ header {
   backface-visibility: hidden;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;
-  transition: transform 0.3s;
+  transition: all 0.3s;
 }
 header.nav-is-visible {
+    
   -webkit-transform: translateX(-260px);
   -moz-transform: translateX(-260px);
   -ms-transform: translateX(-260px);
@@ -65,10 +65,13 @@ header::before {
   content: 'mobile';
 }
 @media only screen and (min-width: 1024px) {
-  header {
+  header {  
     height: 80px;
+    background-color: rgba(0,28,32,1);   
+
   }
   header.nav-is-visible {
+     background-color: #001C20;   
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
@@ -201,7 +204,6 @@ header::before {
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   visibility: hidden;
-  background: #1e262c;
   -webkit-transition: visibility 0s 0.3s;
   -moz-transition: visibility 0s 0.3s;
   transition: visibility 0s 0.3s;
@@ -232,6 +234,7 @@ header::before {
 }
 .cd-main-nav.nav-is-visible {
   visibility: visible;
+  background-color: #001C20;      
   -webkit-transition: visibility 0s 0s;
   -moz-transition: visibility 0s 0s;
   transition: visibility 0s 0s;
@@ -384,7 +387,8 @@ header::before {
   }
   .cd-main-nav li ul {
     height: 80px;
-    background-color: #7e4d7e;
+    background-color:#003366;
+;
     /* padding left = logo size + logo left position*/
     padding: 0 5% 0 calc(5% + 124px);
     -webkit-transform: translateY(-80px);
@@ -472,13 +476,20 @@ header::before {
   .cd-main-content::before {
     content: 'desktop';
   }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .cd-main-content {
+        margin-top: 30px;
+    }
 }
 
 .cd-main-content {
   position: relative;
   z-index: 2;
   min-height: 100vh;
-  padding-top: 50px;
+  top:-80px;;
   background-color: #f2f2f2;
   -webkit-transition: -webkit-transform 0.3s;
   -moz-transition: -moz-transform 0.3s;

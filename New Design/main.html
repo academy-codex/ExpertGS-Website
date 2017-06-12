@@ -2,21 +2,36 @@
   <!DOCTYPE html>
   <html>
     <head>
+        
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round" rel="stylesheet">    
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-<!--      <link rel="stylesheet" href="css/reset.css">  CSS reset -->
-      <link type="text/css" rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+      <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+      <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
       <link rel="stylesheet" href="css/carousel.css"><!-- Hero Slider Css -->    
 	  <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+      <style>
+          .btn{
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.6rem;  
+            color: #fff; 
+          }  
+          
+          #topbar{
+              background-color:rgba(0,28,32,0);
+          }
+
+      </style>    
     </head>
 
     <body>
-       <header>
+       <header id="topbar">
 		<div class="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
 
 		<nav class="cd-main-nav-wrapper">
@@ -52,7 +67,6 @@
 				<div class="cd-full-width">
 					<h2>Hero slider</h2>
 					<p>A simple, responsive slideshow in CSS &amp; jQuery.</p>
-					<a href="http://codyhouse.co/?p=675" class="cd-btn">Article &amp; Download</a>
 				</div> <!-- .cd-full-width -->
 			</li>
 
@@ -79,13 +93,40 @@
 		</ul> <!-- .cd-hero-slider -->
 
 	</section> <!-- .cd-hero -->
+        
+        
+         <h1 class="center" id="check"> Our Features <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h1>
 	</main>
         
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script src="js/main.js"></script> <!-- Resource jQuery -->
-      <script src="js/hero.js"></script>    
+      <script src="js/hero.js"></script>  
+      <script type="text/javascript">
+          
+          var navEffect = function(){
+              window.addEventListener('scroll', function(e){
+              
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+                var changeOn = 50;
+                var header = document.getElementById('topbar');
+              
+                if (distanceY>changeOn){
+                    header.style.backgroundColor="rgb(0,28,32)";
+                } else{
+                    header.style.backgroundColor="rgba(0,28,32,0)";
+                }
+                
+          });
+          };
+          
+          navEffect();
+          
+//          window.onload = ()=>{
+//            
+//          };
+      </script>    
 
     </body>
   </html>
