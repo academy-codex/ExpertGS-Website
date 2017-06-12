@@ -27,10 +27,32 @@
               background-color:rgba(0,28,32,0);
           }
 
+          #Content{
+              display: none;
+              transition: display 0.4s;
+          }
+          
+          #spinner{
+              background-color: black;
+              width: 100%;
+              height: 100vh;
+          }
+        
+          
       </style>    
     </head>
 
     <body>
+    <div id="spinner">
+            <div class="sk-folding-cube">
+              <div class="sk-cube1 sk-cube"></div>
+              <div class="sk-cube2 sk-cube"></div>
+              <div class="sk-cube4 sk-cube"></div>
+              <div class="sk-cube3 sk-cube"></div>
+            </div>
+    </div>
+        
+        <div id="Content">
        <header id="topbar">
 		<div class="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
 
@@ -90,14 +112,17 @@
 					<a href="#0" class="cd-btn secondary">Learn More</a>
 				</div> <!-- .cd-full-width -->
 			</li>
+            
+            
 		</ul> <!-- .cd-hero-slider -->
 
 	</section> <!-- .cd-hero -->
         
         
          <h1 class="center" id="check"> Our Features <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h1>
-	</main>
         
+	</main>
+        </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -120,12 +145,21 @@
                 
           });
           };
-          
-          navEffect();
-          
-//          window.onload = ()=>{
-//            
-//          };
+          window.onload = ()=>{
+            
+            navEffect();
+            setTimeout(()=>{
+//                document.getElementById('spinner').style.display="none";
+//                document.getElementById('Content').style.display="block";
+                $("#spinner").fadeOut(1000, ()=>{
+                    $('#spinner').hide();
+                    $("#Content").fadeIn(1000, ()=>{
+                        $("#Content").style.display="block";
+                    });
+                })
+            }, 2000);
+              
+          };
       </script>    
 
     </body>
