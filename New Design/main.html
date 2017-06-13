@@ -3,43 +3,21 @@
   <html>
     <head>
         
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round" rel="stylesheet">    
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
       <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-      <link rel="stylesheet" href="css/carousel.css"><!-- Hero Slider Css -->    
+      <link rel="stylesheet" href="css/carousel.css"><!-- Hero Slider Css --> 
+      <link rel="stylesheet" href="css/custom.css"><!-- My custom Css -->    
 	  <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-      <style>
-          .btn{
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.6rem;  
-            color: #fff; 
-          }  
-          
-          #topbar{
-              background-color:rgba(0,28,32,0);
-          }
-
-          #Content{
-              display: none;
-              transition: display 0.4s;
-          }
-          
-          #spinner{
-              background-color: black;
-              width: 100%;
-              height: 100vh;
-          }
-        
-          
-      </style>    
+      
     </head>
 
     <body>
@@ -118,8 +96,89 @@
 
 	</section> <!-- .cd-hero -->
         
+        <br><br>
+        <h1 class="center" id="check"> <b>Our Features</b> 
+            <br><br>
+        </h1>
         
-         <h1 class="center" id="check"> Our Features <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h1>
+        <div class="wrapper">
+            
+            <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/mechanics.svg">
+            </h2>
+            <h5 class="icon-title center">Mechanical Solutions</h5>
+              <br>
+            <p class="icon-content center">Streamline your operations in the most cost effective manner.</p>  
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/laptop.png">
+            </h2>
+            <h5 class="icon-title center">Software Solutions</h5>
+              <br>
+            <p class="icon-content center">More than twenty five years of cumulative experience when it comes to providing IT solutions </p>  
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/chip.svg">
+            </h2>
+            <h5 class="icon-title center">Embedded Electronics</h5>
+              <br>
+              <p class="icon-content center">Our services encompass the entire product lifecycle, from ideation to design and prototyping </p> 
+          </div>
+        </div>
+      </div>
+      <br><br><br><br>            
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/mechanics.svg">
+            </h2>
+            <h5 class="icon-title center">Mechanical Solutions</h5>
+              <br>
+            <p class="icon-content center">Streamline your operations in the most cost effective manner.</p>  
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/laptop.png">
+            </h2>
+            <h5 class="icon-title center">Software Solutions</h5>
+              <br>
+            <p class="icon-content center">More than twenty five years of cumulative experience when it comes to providing IT solutions </p>  
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/chip.svg">
+            </h2>
+            <h5 class="icon-title center">Embedded Electronics</h5>
+              <br>
+              <p class="icon-content center">Our services encompass the entire product lifecycle, from ideation to design and prototyping </p> 
+          </div>
+        </div>
+      </div>            
+
+    </div>
+        
+        </div>
         
 	</main>
         </div>
@@ -148,18 +207,19 @@
           window.onload = ()=>{
             
             navEffect();
-            setTimeout(()=>{
-//                document.getElementById('spinner').style.display="none";
-//                document.getElementById('Content').style.display="block";
-                $("#spinner").fadeOut(1000, ()=>{
-                    $('#spinner').hide();
-                    $("#Content").fadeIn(1000, ()=>{
-                        $("#Content").style.display="block";
-                    });
-                })
-            }, 2000);
-              
           };
+//            setTimeout(()=>{
+////                document.getElementById('spinner').style.display="none";
+////                document.getElementById('Content').style.display="block";
+//                $("#spinner").fadeOut(1000, ()=>{
+//                    $('#spinner').hide();
+//                    $("#Content").fadeIn(1000, ()=>{
+//                        $("#Content").style.display="block";
+//                    });
+//                })
+//            }, 2000);
+//              
+//          };
       </script>    
 
     </body>
