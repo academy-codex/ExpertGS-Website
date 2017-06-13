@@ -11,6 +11,7 @@
 #Content{
    /* display: none;*/
     transition: display 0.4s;
+    height: 100vh;
 }
           
 #spinner{
@@ -30,7 +31,10 @@
     height: 150px;
     width: 150px;
 }
-
+#sap{
+    height: 150px;
+    width: 200px;
+}
 .icon-title{
     font-family: 'Montserrat', sans-serif;
     font-size: 23px; 
@@ -39,13 +43,71 @@
     font-weight: 300;
 }
    
+h2.icon-title{
+    color: #fff;
+    font-family: 'Varela Round', sans-serif;
+     font-size: 5rem; 
+     font-weight: 600;
+}
 .icon-content{
     font-family: 'Roboto','sans serif';
     font-weight:300;
     font-size: 18px;
-    margin-top: 10px;
+    padding-top:10px;
+    padding-bottom: 10px;
     padding-right: 5%;
     padding-left: 5%;
     opacity: 0.8;
-    line-height:120%
+    line-height:120%;
+    margin: 0;
 }
+.news-wrapper{
+    background-image: url("img/playstation-pattern.png");
+}
+.news-section{
+    background-color: rgba(0,0,128,0.5);
+}
+
+/* ------------------------
+
+    NEWS CAROUSEL
+
+-------------------------*/
+
+.main-gallery {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+
+}
+
+.gallery-cell {
+  width: 100%;
+}
+
+.testimonial {
+  text-align: center;
+  max-width: 850px;
+  margin: 100px auto 80px auto;
+  padding: 0 20px;
+}
+
+.testimonial-avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.testimonial-quote {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  color:#fff;
+  line-height: 120%;    
+  padding: 10px 0;
+}
+
+.testimonial-author {
+  display: block;
+  font-weight: 800;
+  color: #fff;
+  opacity: 0.8;    
+}
+
