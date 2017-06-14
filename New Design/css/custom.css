@@ -4,20 +4,20 @@
      color: #fff; 
 }  
           
-#topbar{     
-     background-color:rgba(0,28,32,0); 
+#topbar{  
+    display: none;
+    background-color:rgba(0,28,32,0); 
 }
 
 #Content{
-   /* display: none;*/
-    transition: display 0.4s;
     height: 100vh;
 }
           
 #spinner{
     background-color: black;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
+    z-index: 100;
 }
 
 .check{
@@ -149,29 +149,14 @@ h5.title{
 
 svg {
   display:inline-block;
-  height:7vw; max-height:80px;
+  height:5vw; max-height:120px;
   width:auto;
   stroke:#fff;
   stroke-width:15;
   fill:none;
+  transition: fill ease 0.4s;
 }
-#tw {stroke-dasharray:  300 , 0, 3000;}
-#st {stroke-dasharray:    0 , 0, 2300;}
-#fa {stroke-dasharray:    0 , 0, 2900;}
-#co {stroke-dasharray:  300 , 0, 3000;}
-#px {stroke-dasharray: 3200 , 0, 3000;}
 
-svg:hover #tw { animation: tw .7s; }
-svg:hover #st { animation: st .7s; }
-svg:hover #fa { animation: fa .7s; }
-svg:hover #co { animation: co .7s; }
-svg:hover #px { animation: px .7s; }
-
-@keyframes tw { 10% {stroke-dasharray:  300, 500, 3000} 100% { stroke-dasharray:3300, 500, 3000;} }
-@keyframes st { 10% {stroke-dasharray:    0, 500, 2300} 100% { stroke-dasharray:2300, 500, 2300;} }
-@keyframes fa { 10% {stroke-dasharray:    0, 500, 2900} 100% { stroke-dasharray:2900, 500, 2900;} }
-@keyframes co { 10% {stroke-dasharray:  300, 500, 3000} 100% { stroke-dasharray:2300, 500, 3000;} }
-@keyframes px { 10% {stroke-dasharray: 3200, 500, 3000} 100% { stroke-dasharray:6200, 500, 3000;} }
-
-.social-icons{
+svg:hover{
+    fill:#fff;
 }
