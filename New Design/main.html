@@ -3,34 +3,35 @@
   <html>
     <head>
         
-      <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round" rel="stylesheet">    
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
       <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
-      <link rel="stylesheet" href="css/carousel.css"><!-- Hero Slider Css -->    
+      <link rel="stylesheet" href="css/carousel.css"><!-- Hero Slider Css --> 
+      <link rel="stylesheet" href="css/custom.css"><!-- My custom Css -->
+        <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.min.css'>
 	  <script src="js/modernizr.js"></script> <!-- Modernizr -->
-
+    
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        
-      <style>
-          .btn{
-            font-family: 'Roboto', sans-serif;
-            font-size: 1.6rem;  
-            color: #fff; 
-          }  
-          
-          #topbar{
-              background-color:rgba(0,28,32,0);
-          }
-
-      </style>    
+      
     </head>
 
     <body>
+    <div id="spinner">
+            <div class="sk-folding-cube">
+              <div class="sk-cube1 sk-cube"></div>
+              <div class="sk-cube2 sk-cube"></div>
+              <div class="sk-cube4 sk-cube"></div>
+              <div class="sk-cube3 sk-cube"></div>
+            </div>
+    </div>
+        
+    <div id="Content">
        <header id="topbar">
 		<div class="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
 
@@ -90,16 +91,171 @@
 					<a href="#0" class="cd-btn secondary">Learn More</a>
 				</div> <!-- .cd-full-width -->
 			</li>
+            
+            
 		</ul> <!-- .cd-hero-slider -->
 
 	</section> <!-- .cd-hero -->
         
+        <br><br>
+        <h1 class="center check"> <b>Our Features</b> 
+            <br><br>
+        </h1>
         
-         <h1 class="center" id="check"> Our Features <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></h1>
+        <div class="wrapper">
+            
+            <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/mechanics.svg">
+            </h2>
+            <h5 class="icon-title center">Mechanical Solutions</h5>
+              <br>
+            <p class="icon-content center">Streamline your operations in the most cost effective manner.</p>  
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/laptop.png">
+            </h2>
+            <h5 class="icon-title center">Software Solutions</h5>
+              <br>
+            <p class="icon-content center">More than twenty five years of cumulative experience when it comes to providing IT solutions </p>  
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/chip.svg">
+            </h2>
+            <h5 class="icon-title center">Embedded Electronics</h5>
+              <br>
+              <p class="icon-content center">Our services encompass the entire product lifecycle, from ideation to design and prototyping </p> 
+          </div>
+        </div>
+      </div>
+      <br><br><br><br>            
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/steering-wheel.svg">
+            </h2>
+            <h5 class="icon-title center">Connected Cars</h5>
+              <br>
+            <p class="icon-content center">Streamline your operations in the most cost effective manner.</p>  
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img id="sap" class="material-icons" src="img/SAP-Logo.svg">
+            </h2>
+            <h5 class="icon-title center">SAP</h5>
+              <br>
+            <p class="icon-content center">Provision of end to end SAP module implementation and maximizing the return on the investments</p>  
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text">
+                <img class="material-icons" src="img/strategy.svg">
+            </h2>
+            <h5 class="icon-title center">Consulting</h5>
+              <br>
+              <p class="icon-content center">Our services encompass the entire product lifecycle, from ideation to design and prototyping </p> 
+          </div>
+        </div>
+      </div>            
+
+    </div>
+        
+        </div>
+        
+        <div class="news-wrapper">    
+        <div class="news-section">
+            <br>
+            <h2 class="icon-title center">In the News</h2>
+            <div class="main-gallery">
+  <div class="gallery-cell">
+    <div class="testimonial">
+      <q class="testimonial-quote">"Mr. Prashant Deshpande addressed the audience about the Expert Global Solutions story in the event of # TieCon 2017 Pune."</q>
+      <span class="testimonial-author">April, 2017</span>
+      <br><br>    
+      		<a href="#0" class="btn grey darken-4 waves-effect waves-light">Learn more</a>
+    
+    </div>
+  </div>
+  <div class="gallery-cell">
+     <div class="testimonial">
+      <q class="testimonial-quote">"#NASSCOM Product Conclave 2017 Great Show #Expert Global Solutions Team and #ECMobility Team: Industry 4.0, Autonomous Driving The Next Big Thing - DRIVE with #IoT Connected Vehicles #Industry4.0 #ADAS #AutonomousDriving."</q>
+      <span class="testimonial-author">March, 2017</span>
+         <br><br>    
+      		<a href="#0" class="btn grey darken-4 waves-effect waves-light" >Learn more</a>
+    
+    </div>
+  </div>
+  <div class="gallery-cell">
+        <div class="testimonial">
+      <q class="testimonial-quote">"Mr. Prashant Deshpane at CII Maharashtra Annual Meeting @ Mumbai. It was great pleasure to be part of the panel discussions "Sustainable Maharashtra" Leveraging Partnerships to Accelerate Growth" conducted by Dr Ajit Ranade, leading economist of India. Thank you CII for the opportunity."</q>
+      <br>        
+      <span class="testimonial-author">March, 2017</span>
+            <br><br>    
+      		<a href="#0" class="btn grey darken-4 waves-effect waves-light">Learn more</a>
+    
+    </div>
+  </div>
+</div>
+            
+        </div>
+    </div> 
+        
+        <div class="clients-wrapper">
+            <div class="clients-section">
+                <h1 class="icon-title center">Recognitions</h1>
+                <br><br>
+                <p class="icon-content center">
+                    In our constant endeavor to delight our customers with cost effective solutions.<br>We have established several milestones and received “Awards as well as Recognitions” from authorities all over the globe.
+                </p>
+                <br><br>
+                <h2 class="center check" style="font-size:3rem;font-weight:200;"> Business Partners </h2>
+                <br><br>
+                <div class="section">
+                    <div class="row">
+                        <div class="col s12 m4 center"><img src="img/cisco-logo.png" class="material-icons client-pic"></div>
+                        <div class="col s12 m4 center"><img src="img/cmore.png" class="material-icons client-pic"></div>
+                        <div class="col s12 m4 center"><img src="img/cyberoam-logo.png" class="material-icons client-pic"></div>
+                    </div>
+                    <br>
+                     <div class="row">
+                        <div class="col s12 m4 center"><img src="img/d-link-logo.png" class="material-icons client-pic"></div>
+                        <div class="col s12 m4 center"><img src="img/electronics.png" class="material-icons client-pic"></div>
+                        <div class="col s12 m4 center"><img src="img/microsoftpartner.png" class="material-icons client-pic"></div>
+                    </div>
+                    <br>
+                     <div class="row">
+                        <div class="col s12 m4 center"><img src="img/netcore-logo_1.png" class="material-icons client-pic"></div>
+                        <div class="col s12 m4 center"><img src="img/SAPMember_extendedbusiness.png" class="material-icons client-pic"></div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
 	</main>
-        
+        </div>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+       <script src='http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.min.js'></script>    
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script src="js/main.js"></script> <!-- Resource jQuery -->
       <script src="js/hero.js"></script>  
@@ -120,12 +276,30 @@
                 
           });
           };
-          
-          navEffect();
-          
-//          window.onload = ()=>{
-//            
-//          };
+          window.onload = ()=>{
+            
+              navEffect();
+              var flkty = new Flickity( '.main-gallery', {
+              cellAlign: 'left',
+              contain: false,
+              pageDots:false,      
+              wrapAround: false,
+              prevNextButtons: true,
+              autoPlay: 2000
+            });
+//                        setTimeout(()=>{
+////                document.getElementById('spinner').style.display="none";
+////                document.getElementById('Content').style.display="block";
+//                    $("#spinner").fadeOut(1000, ()=>{
+//                    $('#spinner').hide();
+//                    $("#Content").fadeIn(1000, ()=>{
+//                        $("#Content").style.display="block";
+//                    });
+//                })
+//            }, 2000);
+              
+      
+          };
       </script>    
 
     </body>
