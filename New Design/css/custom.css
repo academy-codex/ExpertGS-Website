@@ -21,7 +21,7 @@
     height: 100vh;
 }
 
-#check{
+.check{
     font-family: 'Varela Round', sans-serif;
      font-size: 5rem; 
      font-weight: 600;
@@ -111,3 +111,15 @@ h2.icon-title{
   opacity: 0.8;    
 }
 
+
+
+h1.icon-title{
+     font-family: 'Varela Round', sans-serif;
+     font-size: 5rem; 
+     font-weight: 600;
+}
+
+.client-pic{
+    height: 80px;
+    width: 160px;
+}
