@@ -57,3 +57,258 @@ hr{
     opacity: 0.8;
     line-height: 130%;
 }
+
+/* Buttons */
+button.snip1099 {
+  font-family: 'Raleway', Arial, sans-serif;
+  border: none;
+  background-color: #000000;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 10px 30px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  font-weight: 400;
+  font-size: 1em;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button.snip1099 span {
+  display: inline-block;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0.8;
+}
+
+button.snip1099 i {
+  font-size: 21px;
+  left: 22px;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+button.snip1099:hover span,
+button.snip1099.hover span {
+  -webkit-transform: translate3d(10px, 0px, 0px);
+  transform: translate3d(10px, 0px, 0px);
+  opacity: 1;
+}
+
+button.snip1099:hover i,
+button.snip1099.hover i {
+  opacity: 0.8;
+}
+
+button.snip1099:active span {
+  -webkit-transform: translate3d(14px, 0px, 0px);
+  transform: translate3d(14px, 0px, 0px);
+}
+
+button.snip1099:active i {
+  left: 18px;
+}
+
+button.snip1099.blue {
+  background-color: #20638f;
+}
+
+button.snip1099.red {
+  background-color: #962d22;
+}
+
+button.snip1099.yellow {
+  background-color: #b06f09;
+}
+
+
+.offices{
+    background-color: #EF4581;
+    opacity: 0.9;
+}
+.offices h2{
+   font-size: 3.8rem;
+    font-family: 'Roboto','sans-serif';
+    font-weight: 300; 
+}
+
+figure.snip0074 {
+  font-family: 'Raleway', Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  text-align: center;
+  background: #000000;
+}
+figure.snip0074 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+figure.snip0074:before,
+figure.snip0074:after {
+  position: absolute;
+  width: 100%;
+  background: #000000;
+  height: 0px;
+  display: block;
+  content: '';
+  z-index: 1;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+figure.snip0074:before {
+  top: 0;
+}
+figure.snip0074:after {
+  bottom: 0;
+}
+figure.snip0074 .image {
+  position: relative;
+}
+figure.snip0074 .image img {
+  max-width: 100%;
+  margin-bottom: -5px;
+}
+figure.snip0074 .icons {
+  top: 50%;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+figure.snip0074 .icons i {
+  opacity: 0;
+  display: inline-block;
+  font-size: 28px;
+  border: solid 3px #ffffff;
+  margin: 5px;
+  color: #ffffff;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+figure.snip0074 figcaption {
+  position: relative;
+  background: #ffffff;
+}
+figure.snip0074 h3,
+figure.snip0074 p {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+}
+figure.snip0074 h3 {
+  font-weight: 400;
+  font-size: 1.5em;
+  width: 100%;
+  padding: 12px 15px;
+  background: #333333;
+  text-transform: uppercase;
+}
+figure.snip0074 h3 span {
+  font-weight: 800;
+}
+figure.snip0074 p {
+  font-size: 0.9em;
+  font-weight: 500;
+  background: #ffffff;
+  color: #4d4d4d;
+  padding: 30px 40px 40px;
+}
+figure.snip0074 a {
+  opacity: 0.7;
+}
+figure.snip0074 a:hover {
+  opacity: 1;
+}
+figure.snip0074.blue {
+  background: #091b27;
+}
+figure.snip0074.blue h3,
+figure.snip0074.blue:before,
+figure.snip0074.blue:after {
+  background: #2980b9;
+}
+figure.snip0074.red {
+  background: #2e0e0a;
+}
+figure.snip0074.red h3,
+figure.snip0074.red:before,
+figure.snip0074.red:after {
+  background: #c0392b;
+}
+figure.snip0074.yellow {
+  background: #4d2909;
+}
+figure.snip0074.yellow h3,
+figure.snip0074.yellow:before,
+figure.snip0074.yellow:after {
+  background: #e67e22;
+}
+figure.snip0074.green {
+  background: #061c10;
+}
+figure.snip0074.green h3,
+figure.snip0074.green:before,
+figure.snip0074.green:after {
+  background: #27ae60;
+}
+figure.snip0074:hover img,
+figure.snip0074.hover img {
+  opacity: 0.35;
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+figure.snip0074:hover i,
+figure.snip0074.hover i {
+  opacity: 1;
+}
+figure.snip0074:hover:before,
+figure.snip0074.hover:before,
+figure.snip0074:hover:after,
+figure.snip0074.hover:after {
+  height: 10px;
+}
+figure.snip0074:hover a:first-child i,
+figure.snip0074.hover a:first-child i {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+figure.snip0074:hover a:nth-child(2) i,
+figure.snip0074.hover a:nth-child(2) i {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+figure.snip0074:hover a:nth-child(3) i,
+figure.snip0074.hover a:nth-child(3) i {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+
+.maps h2{
+    font-size: 3.8rem;
+    font-family: 'Roboto','sans-serif';
+    font-weight: 300;
+}
