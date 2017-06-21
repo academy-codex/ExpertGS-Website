@@ -1,0 +1,59 @@
+#topbar{  
+    background-color:rgba(0,28,32,0.05); 
+}
+.parallax-container{
+    margin-top: -77px;
+}
+.parallax-content{
+    height: 100%;
+    background-color: rgba(46, 113, 234,0.8);
+}
+.parallax-content p{
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto', 'sans serif';
+    font-size: 40px;
+    padding: 0px 20px 0px 20px;
+}
+#undertext{
+    font-size: 20px;
+    font-weight: 200;
+}
+hr{
+    width: 5%;
+    border: none;
+    background-color: #fff;
+    height: 2px;
+}
+
+.inquiry h2{
+    font-size: 3.8rem;
+    font-family: 'Roboto','sans-serif';
+    font-weight: 300;
+}
+.inquiry .subtext{
+    opacity: 0.8;
+    font-size: 1.8rem;
+}
+
+.sections h2{
+    font-family: 'Varela Round','sans serif';
+    font-size: 2.5rem;
+    color: #EF5350;
+}
+.sections img{
+    height: 150px;
+    width: 150px;
+    opacity: 0.8;
+}
+.sections .subtitle{
+    font-size: 2.4rem;
+    font-family: 'Varela Round','sans-serif';
+    font-weight: 600;
+    padding: 5px;
+}
+.sections p{
+    padding: 0px 10%;
+    opacity: 0.8;
+    line-height: 130%;
+}
