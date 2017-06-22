@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+  <html>
+      
+      <meta name="description" content="">
+    <head>
+        
+      <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">       
+      <link href="https://fonts.googleapis.com/css?family=Roboto:300|Varela+Round" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+      <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+      <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+      <link rel="stylesheet" href="css/about.css">
+      <!-- Custom style -->    
+        
+      <script src="js/modernizr.js"></script> <!-- Modernizr -->
+    
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      
+    </head>
+        <body>
+               <header id="topbar">
+		<div class="cd-logo"><a href="#0"><img src="img/cd-logo.svg" alt="Logo"></a></div>
+
+		<nav class="cd-main-nav-wrapper">
+			<ul class="cd-main-nav">
+				<li><a href="#0">About</a></li>
+				<li><a href="#0">Publications</a></li>
+				<li><a href="#0">SAP</a></li>
+				<li><a href="#0">Contact</a></li>
+				<li>
+					<a href="#0" class="cd-subnav-trigger"><span>Services</span></a>
+                        
+					<ul><center>
+						<li class="go-back"><a href="#0">Menu</a></li>
+						<li><a href="#0">Electrical</a></li>
+						<li><a href="#0">Mechanical</a></li>
+						<li><a href="#0">Software</a></li>
+						<li><a href="#0">Oil &amp; Gas</a></li>
+						<li><a href="#0">EC Mobility</a></li>
+						<li><a href="#0" class="placeholder">Placeholder</a></li>
+                        </center></ul>
+				</li>
+			</ul> <!-- .cd-main-nav -->
+		</nav> <!-- .cd-main-nav-wrapper -->
+		
+		<a href="#0" class="cd-nav-trigger">Menu<span></span></a>
+     </header>
+            
+            <main class="cd-main-content">
+		      <!-- main content here -->
+                
+                <div class="parallax-container">
+             <div class="parallax-content valign-wrapper">
+                 <div class=" container center">
+                 <br><br>     
+                 <p>About Us</p>
+                 <br>
+                 <p id="undertext">Specialists in providing Engineering and IT solutions to organizations across the globe by understanding their needs.</p>     
+                 <hr>     
+                 </div>     
+                
+             </div>
+            <div class="parallax">
+                <img src="img/company.jpeg">
+            </div>
+        </div>
+                <br><br>
+                
+                <div class="who-are-we">
+                    <h2 class="center">Who are we ?</h2>
+                    <hr style="background-color:#000;width:40px;height:3px;opacity:0.7;">
+                    <br><br>
+                    
+                    <p class="about-us center">
+                        We create bridges between various technologies and seamlessly integrating them to maximize business benefits. With a proven global delivery model Expert Global has a cumulative experience of over 25 years in the areas of Engineering, Manufacturing Technologies and Information Technology. This experience has been leveraged by our customers across the globe to control costs &amp; improve efficiency.
+                    </p>
+                    <br><br>
+                    <hr class="divider">
+                    <br><br>
+                    <p class="about-us center">
+                        With offices in USA, Europe and India, Expert Global combines the cost advantages offered by an offshore outsourcing partner with the benefits of local presence. We recruit some of the best talent in the industry to service our customers. 
+                    </p>
+                </div>
+                <br><br><br><br>
+                <div class="philosophy">
+                    <br><br><br><br>
+                    <h2 class="center">Our Philosophy</h2>
+                    <hr style="background-color:#000;width:40px;height:3px;opacity:0.7;">
+                    <br><br><br><br>
+                    <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block center">
+            <h2 class="center light-blue-text"><img src="img/diploma.svg"></h2><br><br>
+            <p class="light center">25 years experience in IT, Software Development, Engineering Design and Manufacturing Technologies</p><br>
+            <br>
+            
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block center">
+            <h2 class="center light-blue-text"><img src="img/like.svg" class="services-img"></h2><br><br>
+              <p class="light center">We provide customized solution with best of services to all our clients</p><br>          
+            <br>
+            
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block center">
+            <h2 class="center light-blue-text"><img src="img/ribbon.svg" class="services-img"></h2><br><br>
+              <p class="light center">Serving Fortune 500 companies in last 15 years to excel in domains of Engineering design and Software solutions.</p><br>         
+            <br>
+            
+          </div>
+        </div>
+       
+      </div>
+                </div>
+                <br><br>
+                
+                <div class="why-us"></div>
+            </main>
+            
+<!-- Scripts -->
+     <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=   AIzaSyCsQnrBFDqc_ZCroMmIXXP5NirSIMJ7IgA"></script>        
+      <script src="js/main.js"></script> <!-- Resource jQuery -->
+      <script type="text/javascript">
+          
+        var navEffect = function(){
+              window.addEventListener('scroll', function(e){
+              
+                var distanceY = window.pageYOffset || document.documentElement.scrollTop;
+                var changeOn = 50;
+                var header = document.getElementById('topbar');
+              
+                if (distanceY>changeOn){
+                    header.style.backgroundColor="rgb(0,28,32)";
+                } else{
+                    header.style.backgroundColor="rgba(0,28,32,0)";
+                }
+                
+          });
+          };
+        $(document).ready(function(){
+          $('.parallax').parallax();
+          navEffect();      
+        });
+     </script>  
+        </body>
