@@ -312,3 +312,130 @@ figure.snip0074.hover a:nth-child(3) i {
     font-family: 'Roboto','sans-serif';
     font-weight: 300;
 }
+.maps{
+    padding: 0px 2%;
+}
+.maps address{
+    font-family: 'Roboto','sans-serif';
+    font-size:10px;
+    font-weight:200;
+    height: 40px;
+}
+#map-text{
+font-family: 'Roboto','sans-serif';
+    font-size:20px;
+    font-weight:200;
+    margin-top: 2px;
+}
+#google-container {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-color: #e7eaf0;
+}
+@media only screen and (min-width: 768px) {
+  #google-container {
+    height: 300px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  #google-container {
+    height: 600px;
+  }
+}
+
+#cd-google-map {
+  position: relative;
+}
+#cd-google-map address {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1em 1em;
+  background-color: rgba(211, 104, 104, 0.9);
+  color: white;
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+@media only screen and (min-width: 768px) {
+  #cd-google-map address {
+    font-size: 15px;
+    font-size: 0.9375rem;
+    text-align: center;
+  }
+}
+
+#cd-zoom-in, #cd-zoom-out {
+  height: 32px;
+  width: 32px;
+  cursor: pointer;
+  margin-left: 10px;
+  background-color: rgba(211, 104, 104, 0.9);
+  background-repeat: no-repeat;
+  background-size: 32px 64px;
+  background-image: url("img/cd-icon-controller.svg");
+}
+.no-touch #cd-zoom-in:hover, .no-touch #cd-zoom-out:hover {
+  background-color: #d36868;
+}
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in, #cd-zoom-out {
+    margin-left: 50px;
+  }
+}
+
+#cd-zoom-in {
+  background-position: 50% 0;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+@media only screen and (min-width: 768px) {
+  #cd-zoom-in {
+    margin-top: 50px;
+  }
+}
+
+#cd-zoom-out {
+  background-position: 50% -32px;
+}
+
+
+.page-footer{
+    background-color: #001C20;
+}
+.smalltxt{
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+footer{
+    font-family: 'Varela Round','sans serif';
+}
+footer li {
+    font-size: 18px;
+}
+h5.title{
+    font-size: 25px;
+    color:#fff;
+}
+
+/* Social Icons */
+
+svg {
+  display:inline-block;
+  height:5vw; max-height:120px;
+  width:auto;
+  stroke:#fff;
+  stroke-width:15;
+  fill:none;
+  transition: fill ease 0.4s;
+}
+
+svg:hover{
+    fill:#fff;
+}
+
+
+
+

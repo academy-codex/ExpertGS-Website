@@ -1,8 +1,8 @@
 jQuery(document).ready(function($){
 	//set your google maps parameters
-	var latitude = 51.5255069,
-		longitude = -0.0836207,
-		map_zoom = 14;
+	var latitude = 18.590398,
+		longitude = 73.771237,
+		map_zoom = 3;
 
 	//google map custom marker icon - .png fallback for IE11
 	var is_internetExplorer11= navigator.userAgent.toLowerCase().indexOf('trident') > -1;
@@ -186,7 +186,7 @@ jQuery(document).ready(function($){
 		
 	//set google map options
 	var map_options = {
-      	center: new google.maps.LatLng(latitude, longitude),
+      	center: new google.maps.LatLng(28.0339,1.6596),
       	zoom: map_zoom,
       	panControl: false,
       	zoomControl: false,
@@ -205,6 +205,29 @@ jQuery(document).ready(function($){
 	    visible: true,
 	 	icon: marker_url,
 	});
+    
+    var marker = new google.maps.Marker({
+	  	position: new google.maps.LatLng(19.888724, 75.369182),
+	    map: map,
+	    visible: true,
+	 	icon: marker_url,
+	});
+    
+     var marker = new google.maps.Marker({
+	  	position: new google.maps.LatLng(33.986683, -84.428876),
+	    map: map,
+	    visible: true,
+	 	icon: marker_url,
+	});
+    
+     var marker = new google.maps.Marker({
+	  	position: new google.maps.LatLng(48.143067, 11.587436),
+	    map: map,
+	    visible: true,
+	 	icon: marker_url,
+	});
+    
+    
 
 	//add custom buttons for the zoom-in/zoom-out on the map
 	function CustomZoomControl(controlDiv, map) {
