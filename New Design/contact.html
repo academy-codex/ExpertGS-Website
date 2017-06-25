@@ -9,6 +9,8 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Animate.css -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -17,6 +19,10 @@
       <!-- Custom style -->    
         
       <script src="js/modernizr.js"></script> <!-- Modernizr -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script>
+              new WOW().init();
+      </script>
     
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -56,7 +62,7 @@
          
          <div class="parallax-container">
              <div class="parallax-content valign-wrapper">
-                 <div class=" container center">
+                 <div class="container center animated bounceInUp wow">
                  <br><br>     
                  <p>Contact Us</p>
                  <br>
@@ -72,33 +78,21 @@
          
          <div class="inquiry">
                 <br><br>
-                <h2 class="center">Reason for Inquiry</h2>
+                <h2 class="center animated slideInUp wow">Reason for Inquiry</h2>
              
                 <hr style="background-color:#000;opacity:0.8;width:40px;height:3px;">
                  <br>
-                <p class="subtext center">Please select the purpose for inquiry</p>
+                <p class="subtext center animated slideInUp wow">Please select the purpose for inquiry</p>
                <br><br><br><br><br><br><br>
              
           <div class="sections">   
              <div class="row">
         <div class="col s12 m4">
           <div class="icon-block center">
-            <h2 class="center light-blue-text"><img src="img/presentation.svg"></h2><br><br>
-            <h5 class="center subtitle">Request Presentation</h5>
+            <h2 class="center light-blue-text animated flipInX wow"><img src="img/presentation.svg"></h2><br><br>
+            <h5 class="center subtitle animated fadeIn wow">Request Presentation</h5>
             <br>
-            <p class="light center">Request a demonstration of ExpertGS's award-winning, differentiated instruction solutions.</p><br>
-            <br>
-            <button class="snip1099 red"><span>Read More</span><i class="ion-android-arrow-forward"></i></button>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block center">
-            <h2 class="center light-blue-text"><img src="img/chat.svg" class="services-img"></h2><br>
-              <br>
-            <h5 class="center subtitle">Sales Query</h5>
-              <br>
-              <p class="light center">Reach out to our Sales team directly for immediate assistance with all sales-related inquiries.</p><br>          
+            <p class="light center animated fadeIn wow">Request a demonstration of ExpertGS's award-winning, differentiated instruction solutions.</p><br>
             <br>
             <button class="snip1099 red"><span>Read More</span><i class="ion-android-arrow-forward"></i></button>
           </div>
@@ -106,10 +100,22 @@
 
         <div class="col s12 m4">
           <div class="icon-block center">
-            <h2 class="center light-blue-text"><img src="img/customer.svg" class="services-img"></h2><br><br>
-            <h5 class="center subtitle">Support &amp; Careers</h5>
+            <h2 class="center light-blue-text animated flipInX wow"><img src="img/chat.svg" class="services-img"></h2><br>
               <br>
-              <p class="light center">Request a demonstration of ExpertGS's award-winning, differentiated instruction solutions.</p><br>         
+            <h5 class="center subtitle animated fadeIn wow">Sales Query</h5>
+              <br>
+              <p class="light center animated fadeIn wow">Reach out to our Sales team directly for immediate assistance with all sales-related inquiries.</p><br>          
+            <br>
+            <button class="snip1099 red"><span>Read More</span><i class="ion-android-arrow-forward"></i></button>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block center">
+            <h2 class="center light-blue-text animated flipInX wow"><img src="img/customer.svg" class="services-img"></h2><br><br>
+            <h5 class="center subtitle animated fadeIn wow">Support &amp; Careers</h5>
+              <br>
+              <p class="light center animated fadeIn wow">Request a demonstration of ExpertGS's award-winning, differentiated instruction solutions.</p><br>         
             <br>
             <button class="snip1099 red"><span>Read More</span><i class="ion-android-arrow-forward"></i></button>
           </div>
@@ -121,7 +127,7 @@
             <br><br>
           <div class="offices">
               <br><br>
-            <h2 class="center white-text">Office Locations</h2>
+            <h2 class="center white-text animated flip wow">Office Locations</h2>
             <hr style="height:2px;width:40px;">   
               <br><br>
             <div class="row">
@@ -185,10 +191,11 @@
                  <address><span id="map-text">Tel: +91 20 65109110 &amp; 91-020-65109111</span></address> 
              </section>
          </div>
-         
+         <br><br>
          <!-- Footer -->
         
          <footer class="page-footer">
+             <br><br>
           <div class="container">
               <br><br>
             <div class="row">
