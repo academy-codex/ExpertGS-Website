@@ -191,3 +191,53 @@ ul.job-list > li.job-preview:hover {
 		opacity: 1;
 	}
 }
+
+.footer-wrapper{
+    background-color: #001C20;
+}
+.page-footer{
+    background-color: #001C20;
+    color: #fff;
+}
+.smalltxt{
+    font-size: 12px;
+    font-family: 'Arial','sans-serif';
+    opacity: 0.8;
+}
+
+footer{
+    font-family: 'Arial','sans serif';
+    color: #fff;
+    margin: auto;
+    width: 80%;
+}
+footer li {
+    font-size: 18px;
+    color: #fff !important;
+    list-style-type: none;
+}
+
+footer li a{
+    color: #fff;
+    text-decoration: none;
+}
+h5.title{
+    font-size: 25px;
+    color:#fff;
+}
+
+/* Social Icons */
+
+svg {
+  display:inline-block;
+  height:5vw; max-height:120px;
+  width:auto;
+  stroke:#fff;
+  stroke-width:15;
+  fill:none;
+  transition: fill ease 0.4s;
+}
+
+svg:hover{
+    fill:#fff;
+}
