@@ -13,7 +13,17 @@
     margin-top: -80px;
     height: 100vh;
 }
+
+#div1{
+    background-image: url(img/bg1.jpeg);
+}
           
+#div2{
+    background-image: url(img/bg2.jpeg);  
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #spinner{
     background-color: black;
     width: 100%;
