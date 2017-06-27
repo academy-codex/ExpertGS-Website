@@ -8,6 +8,8 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
       <!--Import Google Icon Font-->
       <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Animate.css -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
@@ -16,6 +18,10 @@
       <!-- Custom style -->
         
       <script src="js/modernizr.js"></script> <!-- Modernizr -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+      <script>
+              new WOW().init();
+      </script>    
     
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -28,7 +34,7 @@
 		<nav class="cd-main-nav-wrapper">
 			<ul class="cd-main-nav">
 				<li><a href="about.html">About</a></li>
-				<li><a href="404.html">Publications</a></li>
+				<li><a href="publications.html">Publications</a></li>
 				<li><a href="404.html">SAP</a></li>
 				<li><a href="contact.html">Contact</a></li>
 				<li>
@@ -40,7 +46,7 @@
 						<li><a href="mechanical.html">Mechanical</a></li>
 						<li><a href="404.html">Software</a></li>
 						<li><a href="404.html">Oil &amp; Gas</a></li>
-						<li><a href="404.html">EC Mobility</a></li>
+						<li><a href="http://www.ec-mobility.biz/">EC Mobility</a></li>
 						<li><a href="#0" class="placeholder">Placeholder</a></li>
                         </center></ul>
 				</li>
@@ -54,7 +60,7 @@
 		<!-- main content here -->
          <div class="parallax-container">
              <div class="parallax-content valign-wrapper">
-                 <div class=" container center">
+                 <div class=" container center animated bounceInUp">
                  <br><br>     
                  <p>Enabling customers to develop heavy duty and complex designs and products</p>
                  <br>
@@ -70,10 +76,10 @@
          <div class="content-container">
             <div class="overview">
                 <br><br>
-                <h2 class="center">About Us <hr style="background-color:#EF5350;width:30px;"></h2>
+                <h2 class="center animated bounce wow">About Us <hr style="background-color:#EF5350;width:30px;"></h2>
                 <br>
                 
-                <p class="text-lighten center">
+                <p class="text-lighten center animated slideInLeft wow">
                     We believe in developing solutions that help companies increase their engineering efficiency in a cost effective manner along with giving them the much needed competitive edge. Using an innovative approach, in-depth research and thorough analysis, the engineering designs developed at Expert Global help businesses develop products faster and in a better way.
                 </p>
                 
@@ -84,7 +90,7 @@
                 <h2 class="center title">Services Offered</h2> 
                 <hr style="background-color:#EF5350;width:30px;"> 
                 <br><br>
-                <div class="row">
+                <div class="row animated flipInY wow">
         <div class="col s12 m3">
           <div class="icon-block">
             <h2 class="center light-blue-text"><img src="img/cube.svg"></h2>
@@ -122,7 +128,7 @@
         </div>
       </div>
                 <br><br>
-                <div class="row">
+                <div class="row animated flipInY wow">
         <div class="col s12 m3">
           <div class="icon-block">
             <h2 class="center light-blue-text"><img src="img/prototype.svg"></h2>
@@ -163,52 +169,64 @@
              <br>
              <div class="expertise">
                  <br><br>
-                <h2 class="center title">Technical Expertise</h2> 
+                <h2 class="center title animated fadeIn wow">Technical Expertise</h2> 
                 <hr style="background-color:#fff;width:30px;"> 
                 <br><br>
                  
         <div class="row">
         <div class="col s12 m6 center">
-          <div class="icon-block">
+          <div class="icon-block animated flipInX wow">
               <ul class="center">
-                  <li class="item"><a href="#0"><span class="item-text">Application Engineering</span></a></li>
+                  <li class="item"><a href="#modal1"><span class="item-text">Application Engineering</span></a></li>
                   
-                      <li class="item"><a href="#0"><span class="item-text">New Product Development</span></a></li>
+                      <li class="item"><a href="#modal1"><span class="item-text">New Product Development</span></a></li>
                   
-                      <li class="item"><a href="#0"><span class="item-text">Sustenence Engineering</span></a></li>
+                      <li class="item"><a href="#modal1"><span class="item-text">Sustenence Engineering</span></a></li>
                   
               </ul>    
               </div>        
           </div>
 
         <div class="col s12 m6">
-          <div class="icon-block">
+          <div class="icon-block animated flipInX wow">
            <ul class="center">
-               <li class="item"><a href="#0"><span class="item-text">Manufacturing Engineering</span></a></li>
+               <li class="item"><a href="#modal1"><span class="item-text">Manufacturing Engineering</span></a></li>
                   
-               <li class="item"><a href="#0"><span class="item-text">Electrochemical Products</span></a></li>
+               <li class="item"><a href="#modal1"><span class="item-text">Electrochemical Products</span></a></li>
                   
               </ul> 
           </div>
         </div>
       </div>
                  <br><br>
+                 
+                 <!-- Modal Structure -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+    </div>
+  </div>
     </div>
              <br>
              
              <div class="enquiry">
-                <h2 class="center">Still in doubt ?</h2>
+                 <br><br><br><br><br><br>
+                <h2 class="center animated lightSpeedIn wow">Still in doubt ?</h2>
                 <hr style="background-color:#EF5350;width:30px;"> 
                  <br><br>
-                <p class="center">We would love to hear from you :&#41;</p>  
-                 <br><br>
-                 <center><a class="btn yellow darken-3 waves-effect waves-light">CONTACT US</a></center>
-                 <br><br>
+                <p class="center animated lightSpeedIn wow">We would love to hear from you :&#41;</p>  
+                 <br><br><br><br>
+                 <center><a class="btn yellow darken-3 waves-effect waves-light animated lightSpeedIn wow">CONTACT US</a></center>
+                 <br><br><br><br><br><br>
              </div>
          
          <!-- Footer -->
         
-         <footer class="page-footer">
+           <footer class="page-footer">
           <div class="container">
               <br><br>
             <div class="row">
@@ -222,23 +240,23 @@
                 <br><br>  
                 <h5 class="center title">Quick Links</h5><br>
                 <ul>
-                  <li class="center"><a class="grey-text text-lighten-2" href="#!">Home</a></li><br>
-                  <li class="center"><a class="grey-text text-lighten-2" href="#!">About</a></li><br>
-                  <li class="center"><a class="grey-text text-lighten-2" href="#!">Careers</a></li><br>
-                  <li class="center"><a class="grey-text text-lighten-2" href="#!">Contact</a></li>
-                  <br><br> 
+                  <li class="center"><a class="grey-text text-lighten-2" href="main.html">Home</a></li><br>
+                  <li class="center"><a class="grey-text text-lighten-2" href="about.html">About</a></li><br>
+                  <li class="center"><a class="grey-text text-lighten-2" href="careers.html">Careers</a></li><br>
+                  <li class="center"><a class="grey-text text-lighten-2" href="contact.html">Contact</a></li>
+                  <br><br>  
                   
                     <!-- Social Buttons -->
                     <li class="center">
-                        <a target="_blank" href="https://twitter.com/web_tiki" class="social-icons">
+                        <a target="_blank" href="https://twitter.com/expertglobalgp" class="social-icons">
   <svg viewBox="0 0 512 512"><path d="M419.6 168.6c-11.7 5.2-24.2 8.7-37.4 10.2 13.4-8.1 23.8-20.8 28.6-36 -12.6 7.5-26.5 12.9-41.3 15.8 -11.9-12.6-28.8-20.6-47.5-20.6 -42 0-72.9 39.2-63.4 79.9 -54.1-2.7-102.1-28.6-134.2-68 -17 29.2-8.8 67.5 20.1 86.9 -10.7-0.3-20.7-3.3-29.5-8.1 -0.7 30.2 20.9 58.4 52.2 64.6 -9.2 2.5-19.2 3.1-29.4 1.1 8.3 25.9 32.3 44.7 60.8 45.2 -27.4 21.4-61.8 31-96.4 27 28.8 18.5 63 29.2 99.8 29.2 120.8 0 189.1-102.1 185-193.6C399.9 193.1 410.9 181.7 419.6 168.6z"/></svg>
 </a>
                         
-<a target="_blank" href="https://www.facebook.com/webtiki/" class="social-icons">
+<a target="_blank" href="https://www.facebook.com/Expert-Global-Group-152812041744324/" class="social-icons">
   <svg viewBox="0 0 512 512"><path d="M211.9 197.4h-36.7v59.9h36.7V433.1h70.5V256.5h49.2l5.2-59.1h-54.4c0 0 0-22.1 0-33.7 0-13.9 2.8-19.5 16.3-19.5 10.9 0 38.2 0 38.2 0V82.9c0 0-40.2 0-48.8 0 -52.5 0-76.1 23.1-76.1 67.3C211.9 188.8 211.9 197.4 211.9 197.4z"/></svg>
 </a>
 
-<a target="_blank" href="https://www.facebook.com/webtiki/" class="social-icons">
+<a target="_blank" href="https://in.linkedin.com/company/expert-global-solutions-inc" class="social-icons">
   <svg viewBox="0 0 512 512"><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"/></svg>    
 </a></li>
                     
@@ -279,7 +297,8 @@
           };
         $(document).ready(function(){
           $('.parallax').parallax();
-          $('.collapsible').collapsible();    
+          $('.collapsible').collapsible(); 
+          //$('.modal').modal();    
           navEffect();      
         });
      </script>
