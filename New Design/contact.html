@@ -17,6 +17,7 @@
       <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
       <link rel="stylesheet" href="css/contactus.css">
       <!-- Custom style -->    
+      <link rel="stylesheet" href="css/popup.css">
         
       <script src="js/modernizr.js"></script> <!-- Modernizr -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
@@ -72,13 +73,13 @@
                 
              </div>
             <div class="parallax">
-                <img src="img/phone.jpeg">
+                <img src="img/phone2.jpg">
             </div>
         </div>
          
          <div class="inquiry">
                 <br><br>
-                <h2 class="center animated slideInUp wow">Reason for Inquiry</h2>
+             <h2 class="center animated slideInUp wow">Reason for Inquiry</h2>
              
                 <hr style="background-color:#000;opacity:0.8;width:40px;height:3px;">
                  <br>
@@ -94,7 +95,7 @@
             <br>
             <p class="light center animated fadeIn wow">Request a demonstration of ExpertGS's award-winning, differentiated instruction solutions.</p><br>
             <br>
-            <button class="snip1099 red"><span>Enquire Now</span><i class="ion-android-arrow-forward"></i></button>
+              <a href="#popup1"><button class="snip1099 red"><span>Enquire Now</span><i class="ion-android-arrow-forward"></i></button></a>
           </div>
         </div>
 
@@ -106,7 +107,7 @@
               <br>
               <p class="light center animated fadeIn wow">Reach out to our Sales team directly for immediate assistance with all sales-related inquiries.</p><br>          
             <br>
-            <button class="snip1099 red"><span>Enquire Now</span><i class="ion-android-arrow-forward"></i></button>
+              <a href="#popup1"><button class="snip1099 red"><span>Enquire Now</span><i class="ion-android-arrow-forward"></i></button></a>
           </div>
         </div>
 
@@ -117,7 +118,7 @@
               <br>
               <p class="light center animated fadeIn wow">Request a demonstration of ExpertGS's award-winning, differentiated instruction solutions.</p><br>         
             <br>
-            <button class="snip1099 red"><span>Enquire Now</span><i class="ion-android-arrow-forward"></i></button>
+              <a href="#popup1"><button class="snip1099 red"><span>Enquire Now</span><i class="ion-android-arrow-forward"></i></button></a>
           </div>
         </div>
        
@@ -193,6 +194,17 @@
              </section>
          </div>
          <br><br>
+         
+         <div class="enquiry">
+                 <br><br><br><br><br><br>
+                <h2 class="center animated lightSpeedIn wow">Still in doubt ?</h2>
+                <hr style="background-color:#fff;width:30px;"> 
+                 <br><br>
+                <p class="center animated lightSpeedIn wow">We would love to hear from you :&#41;</p>  
+                 <br><br><br><br>
+                 <center><a href="form.html" class="btn white black-text darken-3 waves-effect waves-light animated lightSpeedIn wow">CONTACT US</a></center>
+                 <br><br><br><br><br><br>
+             </div>
          <!-- Footer -->
         
          <footer class="page-footer">
@@ -240,6 +252,19 @@
           </div>
         </footer>
          
+           <!-- Modal Structure -->
+<div id="popup1" class="overlay">
+	<div class="popup">
+        <h2><img src="img/avatar.png"><br><b>Robert Singh</b></h2>
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			Hi! You can reach me at +91-XXXXXX98 or you can mail me at abc@email.com
+            
+            <br><br>Thanks!
+		</div>
+	</div>
+</div>
+         
      </main>   
             
 <!-- Scripts -->
@@ -268,6 +293,7 @@
           };
         $(document).ready(function(){
           $('.parallax').parallax();
+          $('.modal').modal();
           navEffect();      
         });
      </script>   

@@ -436,6 +436,26 @@ svg:hover{
     fill:#fff;
 }
 
+.enquiry{
+    background-color: #f27900;
+    color: #fff;
+}
+.enquiry h2{
+    font-family: 'Varela Round','sans serif';
+    font-size: 2.5rem;
+}
+.enquiry .btn{
+    width: 80%;
+    height: 50px;
+    font-size: 2rem;
+    padding-top: 10px;
+}
+.enquiry p{
+    font-size: 2rem;
+    opacity: 0.8;
+    font-weight: 200;
+}
+
 
 
 
