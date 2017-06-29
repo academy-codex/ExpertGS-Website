@@ -1,0 +1,377 @@
+<!doctype html>
+
+<html>
+    <head>
+        <title>Enquiry Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+        <style>
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #14103B;
+  font-family: "Lato", sans-serif;
+}
+@media screen and (min-width: 40em) {
+  body {
+    font-size: 1.25em;
+  }
+}
+
+.form .text-input, .form .textarea, .form .select, .customSelect, .form .label, .form .message, .form .button {
+  padding: 1em;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  line-height: normal;
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.form .text-input, .form .textarea, .form .select, .customSelect {
+  font: inherit;
+  line-height: normal;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+  padding-left: 0;
+  border-bottom-color: #7EC0E4;
+  background: transparent;
+  outline: none;
+  color: white;
+}
+.form .text-input:placeholder, .form .textarea:placeholder, .form .select:placeholder, .customSelect:placeholder {
+  color: #6789BA;
+}
+.form .text-input:-webkit-autofill, .form .textarea:-webkit-autofill, .form .select:-webkit-autofill, .customSelect:-webkit-autofill {
+  box-shadow: 0 0 0px 1000px #14103B inset;
+  -webkit-text-fill-color: white;
+  border-top-color: #14103B;
+  border-left-color: #14103B;
+  border-right-color: #14103B;
+}
+.form .required.text-input, .form .required.textarea, .form .required.select, .required.customSelect, .form [required].text-input, .form [required].textarea, .form [required].select, [required].customSelect {
+  border-bottom-color: #F02A71;
+}
+.form .error.text-input, .form .error.textarea, .form .error.select, .error.customSelect, .error .form .text-input, .form .error .text-input, .error .form .textarea, .form .error .textarea, .error .form .select, .form .error .select, .error .customSelect {
+  border-color: transparent transparent #f02a2a transparent;
+}
+.form .text-input:active, .form .textarea:active, .form .select:active, .customSelect:active, .customSelect.customSelectFocus, .form .text-input:focus, .form .textarea:focus, .form .select:focus, .customSelect:focus {
+  border-color: transparent transparent white transparent;
+}
+
+.form .label, .form .message {
+  position: absolute;
+  z-index: 10;
+  pointer-events: none;
+  padding-left: 0;
+}
+
+.form .label {
+  top: 0;
+  left: 0;
+  color: #6789BA;
+}
+.active .form .label, .form .active .label {
+  font-size: 0.75em;
+  padding: 0;
+}
+.focus .form .label, .form .focus .label {
+  color: #7EC0E4;
+}
+.focus:not(.active) .form .label, .form .focus:not(.active) .label {
+  -webkit-transition: font 0.2s ease;
+  transition: font 0.2s ease;
+}
+
+.form .message {
+  bottom: 0;
+  right: 0;
+  color: #f02a2a;
+  font-size: 0.75em;
+  padding: 0;
+  display: none;
+}
+.error .form .message, .form .error .message {
+  display: block;
+}
+
+.form .checkbox-input, .form .option-input {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.form .checkbox-input + label, .form .option-input + label {
+  display: inline-block;
+  cursor: pointer;
+  color: #6789BA;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  padding-left: 2em;
+  line-height: 1;
+}
+.form .checkbox-input + label:before, .form .option-input + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  border: 1px solid;
+  width: 1em;
+  height: 1em;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+}
+.form .checkbox-input + label:after, .form .option-input + label:after {
+  content: "";
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+  border-left: 3px solid #14103B;
+  border-bottom: 3px solid #14103B;
+  width: 0.5em;
+  height: 0.25em;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.form .checkbox-input:focus + label, .form .option-input:focus + label, .form .checkbox-input:active + label, .form .option-input:active + label {
+  color: #7EC0E4;
+}
+.form .checkbox-input:checked + label, .form .option-input:checked + label {
+  color: white;
+}
+.form .checkbox-input:checked + label:before, .form .option-input:checked + label:before {
+  box-shadow: inset 0px 0px 0px 0.5em #6789BA;
+  color: #6789BA;
+}
+.form .checkbox-input:checked + label:after, .form .option-input:checked + label:after {
+  color: #6789BA;
+}
+.form .checkbox-input:checked:focus + label:before, .form .option-input:checked:focus + label:before, .form .checkbox-input:checked:active + label:before, .form .option-input:checked:active + label:before {
+  box-shadow: inset 0px 0px 0px 0.5em #7EC0E4;
+  color: #7EC0E4;
+}
+
+.form .option-input + label:before {
+  border-radius: 50%;
+}
+.form .option-input + label:after {
+  top: 1px;
+  left: 1px;
+  width: 1em;
+  height: 1em;
+  box-sizing: border-box;
+  border: 3px solid #14103B;
+  border-radius: 50%;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.form .button {
+  font: inherit;
+  font-size: 1em;
+  line-height: normal;
+  cursor: pointer;
+  background-color: transparent;
+  color: #F02A71;
+  border: 1px solid #F02A71;
+  text-align: center;
+}
+.form .button:hover, .form .button:focus, .form .button:active {
+  color: white;
+  border-color: white;
+}
+.form .button:active {
+  position: relative;
+  top: 1px;
+  left: 1px;
+}
+
+.form {
+  max-width: 40em;
+  margin: 0 auto;
+  padding: 1em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.form .field {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+@media screen and (min-width: 40em) {
+  .form .field.half {
+    width: calc(50% - 2em);
+  }
+}
+.form .field.last {
+  margin-left: auto;
+}
+.form .textarea {
+  max-width: 100%;
+  border-right-color: #7EC0E4;
+}
+.form .textarea:active, .form .textarea:focus {
+  border-color: transparent white white transparent;
+}
+.form .button {
+  width: 100%;
+}
+.form .select {
+  text-indent: 0.01px;
+  text-overflow: "" !important;
+}
+.form .select::-ms-expand {
+  display: none;
+}
+.form .checkboxes, .form .options {
+  padding: 0;
+  list-style-type: none;
+}
+.form .checkbox, .form .option {
+  position: relative;
+}
+.form .checkbox + *, .form .option + * {
+  margin-top: 0.5em;
+}
+
+.customSelect:after {
+  content: "";
+  pointer-events: none;
+  width: 1em;
+  height: 1em;
+  border-style: solid;
+  border-color: #6789BA;
+  border-width: 0 1px 1px 0;
+  position: absolute;
+  top: 50%;
+  margin-top: -1em;
+  right: 0;
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.customSelect.customSelectFocus:after {
+  border-color: #7EC0E4;
+}
+
+.info {
+  text-align: center;
+  color: white;
+}
+.info a {
+  color: #F02A71;
+  text-decoration: none;
+}
+
+        </style>
+    </head>
+    
+    <body>
+    
+   <form action='' class='form'>
+  <p class='field required'>
+    <label class='label required' for='name'>Full name</label>
+    <input class='text-input' id='name' name='name' required tabindex='1' type='text'>
+  </p>
+  <p class='field required half'>
+    <label class='label' for='email'>E-mail</label>
+    <input class='text-input' id='email' name='email' required tabindex='2' type='email'>
+  </p>
+  <p class='field half'>
+    <label class='label' for='phone'>Phone</label>
+    <input class='text-input' id='phone' name='phone' tabindex='3' type='phone'>
+  </p>
+  <ul class='field checkboxes half'>
+    <li class='checkbox'>
+      <input class='checkbox-input' id='choice-1' name='choice' tabindex='6' type='checkbox' value='1'>
+      <label class='checkbox-label' for='choice-1'>Company Realted Query</label>
+    </li>
+    <li class='checkbox'>
+      <input class='checkbox-input' id='choice-2' name='choice' tabindex='7' type='checkbox' value='2'>
+      <label class='checkbox-label' for='choice-2'>Jobs Related Query</label>
+    </li>
+    <li class='checkbox'>
+      <input class='checkbox-input' id='choice-3' name='choice' tabindex='8' type='checkbox' value='3'>
+      <label class='checkbox-label' for='choice-3'>Other</label>
+    </li>
+  </ul>
+  <p class='field'>
+    <label class='label' for='about'>Message</label>
+    <textarea class='textarea' cols='50' id='about' name='about' rows='4' tabindex='12'></textarea>
+  </p>
+  <p class='field half'>
+    <input class='button' tabindex='14' type='submit' value='Send'>
+  </p>
+  <p class='field half'>
+      <a href="main.html"><input class='button' tabindex='14' value='Back'></a>
+  </p>       
+</form>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+  (function() {
+    var logo, logo_css;
+    logo = '<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"><title>codepen-logo</title><path d="M16 32C7.163 32 0 24.837 0 16S7.163 0 16 0s16 7.163 16 16-7.163 16-16 16zM7.139 21.651l1.35-1.35a.387.387 0 0 0 0-.54l-3.49-3.49a.387.387 0 0 0-.54 0l-1.35 1.35a.39.39 0 0 0 0 .54l3.49 3.49a.38.38 0 0 0 .54 0zm6.922.153l2.544-2.543a.722.722 0 0 0 0-1.018l-6.582-6.58a.722.722 0 0 0-1.018 0l-2.543 2.544a.719.719 0 0 0 0 1.018l6.58 6.579c.281.28.737.28 1.019 0zm14.779-5.85l-7.786-7.79a.554.554 0 0 0-.788 0l-5.235 5.23a.558.558 0 0 0 0 .789l7.79 7.789c.216.216.568.216.785 0l5.236-5.236a.566.566 0 0 0 0-.786l-.002.003zm-3.89 2.806a.813.813 0 1 1 0-1.626.813.813 0 0 1 0 1.626z" fill="#FFF" fill-rule="evenodd"/></svg>';
+    logo_css = '.mM{display:block;border-radius:50%;box-shadow:0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);position:fixed;bottom:1em;right:1em;-webkit-transform-origin:50% 50%;transform-origin:50% 50%;-webkit-transition:all 240ms ease-in-out;transition:all 240ms ease-in-out;z-index:9999;opacity:0.75}.mM svg{display:block}.mM:hover{opacity:1;-webkit-transform:scale(1.125);transform:scale(1.125)}';
+    document.head.insertAdjacentHTML('beforeend', '<style>' + logo_css + '</style>');
+    document.body.insertAdjacentHTML('beforeend', '<a href="main.html" target="_blank" class="mM">' + logo + '</a>');
+  })();
+
+  (function($) {
+    return $.fn.floatedLabel = function(options) {
+      var defaults, settings;
+      defaults = {
+        focusClass: 'focus',
+        activeClass: 'active',
+        errorClass: 'error'
+      };
+      settings = $.extend({}, defaults, options);
+      return this.each(function() {
+        var element, input, label;
+        label = $(this);
+        if (!label.prop('for')) {
+          return;
+        }
+        element = label.parents('.field').first();
+        input = $("#" + (label.prop('for'))).filter('textarea, input, select').first();
+        return input.bind('checkval', function() {
+          return element.toggleClass(settings.activeClass, !!input.val());
+        }).on('keyup input change', function() {
+          element.removeClass(settings.errorClass);
+          return input.trigger('checkval');
+        }).on('blur', function() {
+          return element.removeClass(settings.focusClass);
+        }).on('focus', function() {
+          return element.addClass(settings.focusClass);
+        }).trigger('checkval');
+      });
+    };
+  })(jQuery);
+
+  $(function() {
+    $('.label').floatedLabel();
+    return $('.select').customSelect();
+  });
+
+}).call(this);
+
+        </script>
+    </body>
+</html>

@@ -1,6 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Hind);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
+#topbar{  
+    background-color:rgba(0,28,32,1); 
+}
 body {
 	font-family: 'Open Sans', sans-serif;
 	color: #31383d;
